@@ -1,0 +1,19 @@
+@Component -> You want sprint to manage your objects/class
+
+
+Web Application
+
+Clinet <--> Server <--> Database
+
+In Server we have different layers & to fetch this data from database , from client  request goes to server
+server sends request to database gets data and sends it back to the client .
+
+Server is responsible to accepts and send data so it contains multiple layers
+1.)Controller -> Controllers works is to handle request , no processing
+2.)Service -> Processing work is done on this layer , Ex : 3+3 = 6 , Factorial , any type of processing
+Service Layers dosent contain data so it has a layer in between Service & Database to access data Called
+DAO(Data Access Object) / Repository
+3.)Repository
+
+Server :Server -> Request -> Controller -> Service(Process the Data) -> Repository(Get data for processing)->
+Service(Process & Create Response) -> Controller(Send back Response to Client) -> Response -> Client
